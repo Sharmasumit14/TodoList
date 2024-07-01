@@ -16,6 +16,7 @@ function Todos() {
   }
 
   const handleSaveClick = () => {
+    // Save editable todo
     dispatch(
       updateTodo({
         id: currentTodo.id,
@@ -66,6 +67,7 @@ function Todos() {
           </li>
         ))}
       </ul>
+      {/* Editing Button Functionality */}
 
       {isEditing && (
         <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50'>

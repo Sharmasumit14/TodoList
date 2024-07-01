@@ -7,7 +7,7 @@ function AddTodo() {
   const dispatch = useDispatch()
 
   const addTodoHandler = (e) => {
-    e.preventDefault()
+    e.preventDefault() // to stop window to get blank
     dispatch(addTodo(input))
     setInput('')
   }
